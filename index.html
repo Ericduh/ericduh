@@ -1,0 +1,79 @@
+<!doctype html> 
+<html> 
+<head> <link rel="stylesheet" type= "text/css" href="theme.css"> </head>
+	<body >
+		<script>
+document.write("whats up");
+function randomPlay() {
+	var play = Math.random() * 3;
+	if (play < 1) {
+		return "rock";
+	} else if (play < 2) {
+		return "paper";
+	} else {
+		return "scissors";
+	}
+}
+function count (potato){
+	var i;
+		for (i=0; i<potato; i=i+1)
+			console.log(i);
+	}
+
+// fill this out
+function rockPaperScissors() {
+	myplay = prompt("What do you play? Rock, paper, or scissors?");
+	if (myplay == "rock" || myplay == "scissors" || myplay == "paper") {
+		console.log("You played " + myplay);
+	} else {
+		console.log("You didn't provide a valid play.")
+	}
+
+	compPlay = randomPlay();
+	console.log("Computer played " + compPlay);
+
+	if ((myplay == "rock" && compPlay == "scissors")
+		|| (myplay == "scissors" && compPlay == "paper")
+		|| (myplay == "paper" && compPlay == "rock") )   
+	{
+		console.log("You win.")
+	} else if ( (myplay == "rock" && compPlay == "rock")
+		|| (myplay == "scissors" && compPlay == "scissors")
+		|| (myplay == "paper" && compPlay == "paper") ) {
+		console.log("You and the computer tie.")
+	} else if  ((myplay == "rock" && compPlay == "paper")
+		|| (myplay == "scissors" && compPlay == "rock")
+		|| (myplay == "paper" && compPlay == "scissors")) {
+		console.log("Computer wins.")
+	}
+}
+function annoyingkid() {
+var response=prompt("are we there yet?");
+while(response !="yes"){
+response = prompt ("are we there yet?");
+}
+if (response == "yes" ){ // redundant,but for clarity's sake
+	console.log("yay,finally!");
+}
+}
+</script>
+ 		<h1> Hello, World </h1>
+ 			<h2> <font color= "blue"> hello, World2 </font> </h2>
+ 			<p> paragraph </p>
+ 			<a href="http://www.google.com"> Google </a>
+ 			<a> </p>
+ 			<a href="hello world"> hello world 1 </a>
+ 				<div>
+ 				<img src="pizza dog.gif"/>
+ 				<img src="pizzachu.gif"/>
+ 			</div> <!-- PIZZA DOG! -->
+<div>
+	<p class="paragraph1"> 123 </p>
+	<p class="paragraph2"> 456 </p>
+	<p class="paragraph3"> 789 </p>
+    <p class="paragraph"> 012 </p>
+</div>
+
+	</body> 
+
+</html>
